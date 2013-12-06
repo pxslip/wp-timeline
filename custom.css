@@ -1,0 +1,28 @@
+.wpt-admin-hint {
+	color: #333;
+	font-style: italic;
+	font-size: 75%;
+}
+
+.wpt-datepicker-label {
+	display: inline-block;
+}
+
+.wpt-datepicker {
+	width: 200px;
+}
+.wpt-datepicker-separator {
+	display: inline-block;
+}
+
+.wpt-text-input {
+	display: inline-block;
+	width:80%;
+}
+.wpt-label-text {
+	display:inline-block;
+	width: 10%;
+}
+.wpt-text-input {
+	width: 75%;
+}
