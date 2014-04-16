@@ -206,10 +206,10 @@ function wpt_timeline_shortcode() {
 add_shortcode('timeline', 'wpt_timeline_shortcode');
 
 function wpt_enqueue_front_scripts() {
-	wp_enqueue_script('wpt-timelinejs', plugins_url('timelinejs/js/timeline.js', __FILE__), array('jquery'), '1.0', FALSE);
-	wp_enqueue_script('wpt-storyjs', plugins_url('timelinejs/js/storyjs-embed.js', __FILE__), array('jquery', 'wpt-timelinejs'), '1.0', FALSE);
+	wp_enqueue_script('wpt-timelinejs', plugins_url('bower_components/timeline.js/js/timeline.js', __FILE__), array('jquery'), '1.0', FALSE);
+	wp_enqueue_script('wpt-storyjs', plugins_url('bower_components/timeline.js/js/storyjs-embed.js', __FILE__), array('jquery', 'wpt-timelinejs'), '1.0', FALSE);
 	wp_enqueue_script('wpt-inittjs', plugins_url('timeline.js', __FILE__), array('wpt-storyjs'), '1.0', FALSE);
-	wp_enqueue_style('wpt-timeline-css', plugins_url('timelinejs/css/timeline.css', __FILE__), '1.0', FALSE);
+	wp_enqueue_style('wpt-timeline-css', plugins_url('bower_components/timeline.js/css/timeline.css', __FILE__), '1.0', FALSE);
 	wp_localize_script('wpt-timelinejs', 'wpt_js', array('base_url'=>get_bloginfo('url')));
 }
 add_action( 'wp_enqueue_scripts', 'wpt_enqueue_front_scripts' );

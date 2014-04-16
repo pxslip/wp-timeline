@@ -1,0 +1,27 @@
+{
+  "name": "wp-timeline",
+  "version": "0.1.0",
+  "homepage": "https://github.com/wskruse/wp-timeline",
+  "authors": [
+    "Will Kruse <wskruse@gmail.com>"
+  ],
+  "description": "WP Timeline is a wordpress plugin that uses TimelineJS courtesy of NUKnightLab. This is different than the plugin developed by NUKnightLab as it uses a built in custom post type to store the data instead of a google doc.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "timeline"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "timeline.js": "~2.30.1"
+  }
+}
